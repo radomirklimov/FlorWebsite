@@ -34,6 +34,28 @@ content/site.json content/songs.json content/lessons.json
 tests/check.py  sitemap.xml  robots.txt  favicon.svg
 ```
 
+## Deploy to Railway (via GitHub)
+
+Deployment is pre-configured (`railway.json` + `nixpacks.toml` — serves the
+static files with Python's built-in HTTP server on Railway's `$PORT`).
+No dependencies, no build step.
+
+```bash
+git init
+git add -A
+git commit -m "Musician website"
+gh repo create FlorWebsite --public --source=. --push
+```
+
+Then:
+
+1. Open [railway.app](https://railway.app) → **New Project** → **Deploy from GitHub repo** → pick the repo.
+2. Railway auto-detects the config and deploys. No settings to change.
+3. **Settings → Networking → Generate Domain** to get a public URL.
+4. After that, replace `https://example.com` with your real domain in:
+   `index.html`, `music.html`, `lessons.html`, `about.html`, `contact.html`
+   (canonical + OG tags), `sitemap.xml`, and `robots.txt`.
+
 ## Tests
 
 ```bash
