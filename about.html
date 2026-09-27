@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — [Artist Name]</title>
+  <meta name="description" content="About [Artist Name]: music, background, style and teaching philosophy.">
+  <link rel="canonical" href="https://example.com/about.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="About — [Artist Name]">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap nav">
+      <a class="brand" href="index.html">[Artist Name]<span>.</span></a>
+      <button class="menu-btn" data-menu-btn aria-expanded="false" aria-label="Open menu">☰</button>
+      <nav class="nav-links" data-nav-links aria-label="Main navigation">
+        <a href="music.html">Music</a>
+        <a href="lessons.html">Lessons</a>
+        <a href="about.html" aria-current="page">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="lessons.html" class="nav-cta">View lessons</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <div class="wrap split" style="padding-top:64px">
+      <div class="portrait reveal" role="img" aria-label="Artist photo placeholder">
+        <small>Photo placeholder</small>
+        <strong>Replace with your portrait</strong>
+      </div>
+      <div class="reveal">
+        <p class="eyebrow">About</p>
+        <h1>Hi, I'm [Artist Name].</h1>
+        <p class="lede">[Placeholder — who you are in two or three honest sentences. What kind of music you make, where you're based.]</p>
+        <p style="color:var(--muted)">[Placeholder — a short paragraph on your musical background: how you started, what shaped your sound. Keep it human, no walls of text.]</p>
+        <p style="color:var(--muted)">[Placeholder — a short paragraph on teaching: why you teach and what students can expect.]</p>
+      </div>
+    </div>
+    <section aria-labelledby="facts-h">
+      <div class="wrap grid-3">
+        <div class="card reveal"><span class="tag">Style</span><h3 id="facts-h">[Genre / style]</h3><p style="color:var(--muted)">[Placeholder — one or two lines about your sound.]</p></div>
+        <div class="card reveal"><span class="tag">Background</span><h3>[Experience]</h3><p style="color:var(--muted)">[Placeholder — performing, writing, recording.]</p></div>
+        <div class="card reveal"><span class="tag">Teaching</span><h3>[Philosophy]</h3><p style="color:var(--muted)">[Placeholder — one line on how you teach.]</p></div>
+      </div>
+    </section>
+    <section class="strip" aria-labelledby="cta-h">
+      <div class="wrap strip-inner reveal">
+        <h2 id="cta-h">Like what you hear? Let's talk.</h2>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="music.html">Listen to my music</a>
+          <a class="btn btn-ghost" href="contact.html">Contact me</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="wrap">
+      <div class="foot-grid">
+        <div><strong style="font-family:var(--serif);color:var(--text)">[Artist Name]</strong><p>Artist · Musician · Teacher</p></div>
+        <div><strong style="color:var(--text)">Follow &amp; listen</strong><div class="socials" data-socials>
+          <a class="pill" href="https://instagram.com/REPLACE_ME" target="_blank" rel="noopener">Instagram</a>
+          <a class="pill" href="https://youtube.com/@REPLACE_ME" target="_blank" rel="noopener">YouTube</a>
+        </div></div>
+        <div><strong style="color:var(--text)">Explore</strong><p><a href="index.html">Home</a> · <a href="music.html">Music</a> · <a href="lessons.html">Lessons</a> · <a href="contact.html">Contact</a></p></div>
+      </div>
+      <div class="foot-bottom"><span>© <span data-year>2026</span> [Artist Name].</span><span><a href="index.html">← Back home</a></span></div>
+    </div>
+  </footer>
+  <script src="js/site.js" defer></script>
+</body>
+</html>

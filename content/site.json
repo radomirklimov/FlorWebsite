@@ -1,0 +1,18 @@
+{
+  "artistName": "[Artist Name]",
+  "tagline": "Artist · Musician · Teacher",
+  "shortDescription": "[Short artist description — one or two sentences about who you are and what kind of music you make.]",
+  "email": "hello@example.com",
+  "location": "[City / Region — placeholder]",
+  "socials": [
+    { "label": "Instagram", "url": "https://instagram.com/REPLACE_ME" },
+    { "label": "TikTok", "url": "https://tiktok.com/@REPLACE_ME" },
+    { "label": "YouTube", "url": "https://youtube.com/@REPLACE_ME" },
+    { "label": "Spotify", "url": "https://open.spotify.com/REPLACE_ME" },
+    { "label": "Facebook", "url": null },
+    { "label": "Bandcamp", "url": null },
+    { "label": "SoundCloud", "url": null },
+    { "label": "Apple Music", "url": null }
+  ],
+  "streamingNote": "Replace REPLACE_ME links with real profiles. Platforms with null URL are hidden automatically."
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — [Artist Name]</title>
+  <meta name="description" content="Contact [Artist Name] about lessons, music or anything else. Email, socials and a simple form.">
+  <link rel="canonical" href="https://example.com/contact.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Contact — [Artist Name]">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap nav">
+      <a class="brand" href="index.html">[Artist Name]<span>.</span></a>
+      <button class="menu-btn" data-menu-btn aria-expanded="false" aria-label="Open menu">☰</button>
+      <nav class="nav-links" data-nav-links aria-label="Main navigation">
+        <a href="music.html">Music</a>
+        <a href="lessons.html">Lessons</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+        <a href="lessons.html" class="nav-cta">View lessons</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <div class="wrap" style="padding-top:64px">
+      <p class="eyebrow">Contact</p>
+      <h1>Say hello.</h1>
+      <p class="lede">For lessons, music, or anything else — one message is enough and I'll reply personally.</p>
+    </div>
+    <section style="padding-top:36px">
+      <div class="wrap grid-2">
+        <div class="reveal">
+          <div class="card">
+            <span class="tag">Direct</span>
+            <h2 style="font-size:1.4rem">Email me</h2>
+            <p><a href="mailto:hello@example.com" style="font-size:1.15rem;font-weight:600">hello@example.com</a></p>
+            <p style="color:var(--muted)">Replace with your real address in <code>contact.html</code> and <code>content/site.json</code>.</p>
+          </div>
+          <div class="card" style="margin-top:18px">
+            <span class="tag">Socials</span>
+            <h2 style="font-size:1.4rem">Find me elsewhere</h2>
+            <div class="socials" data-socials>
+              <a class="pill" href="https://instagram.com/REPLACE_ME" target="_blank" rel="noopener">Instagram</a>
+              <a class="pill" href="https://tiktok.com/@REPLACE_ME" target="_blank" rel="noopener">TikTok</a>
+              <a class="pill" href="https://youtube.com/@REPLACE_ME" target="_blank" rel="noopener">YouTube</a>
+              <a class="pill" href="https://open.spotify.com/REPLACE_ME" target="_blank" rel="noopener">Spotify</a>
+            </div>
+          </div>
+        </div>
+        <form class="form reveal" data-contact-form data-email="hello@example.com" novalidate aria-label="Contact form">
+          <h2 style="font-size:1.4rem">Send a message</h2>
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" autocomplete="name" required>
+          <p class="field-error" data-error-for="name" aria-live="polite"></p>
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" autocomplete="email" required>
+          <p class="field-error" data-error-for="email" aria-live="polite"></p>
+          <label for="interest">Interested in</label>
+          <select id="interest" name="interest">
+            <option>Lesson</option>
+            <option>Music</option>
+            <option>Other</option>
+          </select>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required></textarea>
+          <p class="field-error" data-error-for="message" aria-live="polite"></p>
+          <button class="btn btn-primary" type="submit" style="margin-top:16px;width:100%">Send via email</button>
+          <p class="form-note" data-form-status>No backend needed — this opens your email app addressed to me. Nothing is stored on this site.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="wrap">
+      <div class="foot-grid">
+        <div><strong style="font-family:var(--serif);color:var(--text)">[Artist Name]</strong><p>Artist · Musician · Teacher</p></div>
+        <div><strong style="color:var(--text)">Explore</strong><p><a href="index.html">Home</a> · <a href="music.html">Music</a> · <a href="lessons.html">Lessons</a> · <a href="about.html">About</a></p></div>
+      </div>
+      <div class="foot-bottom"><span>© <span data-year>2026</span> [Artist Name].</span><span><a href="index.html">← Back home</a></span></div>
+    </div>
+  </footer>
+  <script src="js/site.js" defer></script>
+</body>
+</html>

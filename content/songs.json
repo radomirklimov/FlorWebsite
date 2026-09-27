@@ -1,0 +1,50 @@
+[
+  {
+    "id": "midnight-paper-moon",
+    "title": "[Song Title One]",
+    "description": "[Short placeholder description — mood, story, or style of the song.]",
+    "artwork": null,
+    "releaseDate": "[2025]",
+    "genre": "[Genre — placeholder]",
+    "featured": true,
+    "externalLinks": {
+      "Spotify": "https://open.spotify.com/REPLACE_ME",
+      "YouTube": "https://youtube.com/REPLACE_ME",
+      "Apple Music": null,
+      "SoundCloud": null,
+      "Bandcamp": null
+    }
+  },
+  {
+    "id": "paper-streets",
+    "title": "[Song Title Two]",
+    "description": "[Short placeholder description — mood, story, or style of the song.]",
+    "artwork": null,
+    "releaseDate": "[2024]",
+    "genre": "[Genre — placeholder]",
+    "featured": false,
+    "externalLinks": {
+      "Spotify": "https://open.spotify.com/REPLACE_ME",
+      "YouTube": null,
+      "Apple Music": null,
+      "SoundCloud": "https://soundcloud.com/REPLACE_ME",
+      "Bandcamp": null
+    }
+  },
+  {
+    "id": "quiet-rooms",
+    "title": "[Song Title Three]",
+    "description": "[Short placeholder description — mood, story, or style of the song.]",
+    "artwork": null,
+    "releaseDate": "[2023]",
+    "genre": "[Genre — placeholder]",
+    "featured": false,
+    "externalLinks": {
+      "Spotify": null,
+      "YouTube": "https://youtube.com/REPLACE_ME",
+      "Apple Music": null,
+      "SoundCloud": null,
+      "Bandcamp": null
+    }
+  }
+]

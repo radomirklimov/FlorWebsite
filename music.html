@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music — [Artist Name]</title>
+  <meta name="description" content="Listen to [Artist Name]: featured release and all songs with links to Spotify, YouTube and more.">
+  <link rel="canonical" href="https://example.com/music.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Music — [Artist Name]">
+  <meta property="og:description" content="Songs, releases and listening links.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap nav">
+      <a class="brand" href="index.html">[Artist Name]<span>.</span></a>
+      <button class="menu-btn" data-menu-btn aria-expanded="false" aria-label="Open menu">☰</button>
+      <nav class="nav-links" data-nav-links aria-label="Main navigation">
+        <a href="music.html" aria-current="page">Music</a>
+        <a href="lessons.html">Lessons</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="lessons.html" class="nav-cta">View lessons</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <div class="wrap" style="padding-top:64px">
+      <p class="eyebrow">Music</p>
+      <h1>My songs</h1>
+      <p class="lede">No accounts, no players that trap you — pick a song and listen where you already listen. New here? Start with the featured release.</p>
+    </div>
+    <section aria-labelledby="featured-h" style="padding-top:36px">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <h2 id="featured-h">Featured release</h2>
+        </div>
+        <div class="grid-2" data-songs data-featured-only>
+          <article class="card featured">
+            <span class="tag">Featured release</span>
+            <div class="song-art" role="img" aria-label="Artwork placeholder">♪</div>
+            <h3>[Song Title One]</h3>
+            <p class="song-meta">[2025] · [Genre — placeholder]</p>
+            <p style="color:var(--muted)">[Short placeholder description of the song.]</p>
+            <div class="listen-row">
+              <a class="pill" href="https://open.spotify.com/REPLACE_ME" target="_blank" rel="noopener">Spotify</a>
+              <a class="pill" href="https://youtube.com/REPLACE_ME" target="_blank" rel="noopener">YouTube</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section aria-labelledby="all-h" style="padding-top:0">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div>
+            <h2 id="all-h">All releases</h2>
+            <p>Everything in one place. Only platforms with real links are shown — edit <code>content/songs.json</code> to add a song.</p>
+          </div>
+        </div>
+        <div class="grid-3" data-songs>
+          <article class="card">
+            <div class="song-art" role="img" aria-label="Artwork placeholder">♪</div>
+            <h3>[Song Title Two]</h3>
+            <p class="song-meta">[2024] · [Genre — placeholder]</p>
+            <div class="listen-row">
+              <a class="pill" href="https://open.spotify.com/REPLACE_ME" target="_blank" rel="noopener">Spotify</a>
+            </div>
+          </article>
+          <article class="card">
+            <div class="song-art" role="img" aria-label="Artwork placeholder">♪</div>
+            <h3>[Song Title Three]</h3>
+            <p class="song-meta">[2023] · [Genre — placeholder]</p>
+            <div class="listen-row">
+              <a class="pill" href="https://youtube.com/REPLACE_ME" target="_blank" rel="noopener">YouTube</a>
+            </div>
+          </article>
+        </div>
+        <div class="hero-actions" style="margin-top:30px">
+          <a class="btn btn-ghost" href="lessons.html">I also teach →</a>
+          <a class="btn btn-ghost" href="contact.html">Contact me</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="wrap">
+      <div class="foot-grid">
+        <div><strong style="font-family:var(--serif);color:var(--text)">[Artist Name]</strong><p>Artist · Musician · Teacher</p></div>
+        <div><strong style="color:var(--text)">Follow &amp; listen</strong><div class="socials" data-socials>
+          <a class="pill" href="https://instagram.com/REPLACE_ME" target="_blank" rel="noopener">Instagram</a>
+          <a class="pill" href="https://youtube.com/@REPLACE_ME" target="_blank" rel="noopener">YouTube</a>
+          <a class="pill" href="https://open.spotify.com/REPLACE_ME" target="_blank" rel="noopener">Spotify</a>
+        </div></div>
+        <div><strong style="color:var(--text)">Explore</strong><p><a href="index.html">Home</a> · <a href="lessons.html">Lessons</a> · <a href="about.html">About</a> · <a href="contact.html">Contact</a></p></div>
+      </div>
+      <div class="foot-bottom"><span>© <span data-year>2026</span> [Artist Name].</span><span><a href="index.html">← Back home</a></span></div>
+    </div>
+  </footer>
+  <script src="js/site.js" defer></script>
+</body>
+</html>

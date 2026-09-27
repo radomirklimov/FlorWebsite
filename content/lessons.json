@@ -1,0 +1,56 @@
+[
+  {
+    "id": "individual",
+    "title": "Individual Lesson",
+    "shortDescription": "[Placeholder — one sentence on who this lesson is for.]",
+    "longDescription": "[Placeholder — what happens in the lesson, how it is personalized to goals and level.]",
+    "duration": "60 minutes",
+    "price": "€XX",
+    "currency": "EUR",
+    "targetAudience": "[Placeholder — e.g. all levels]",
+    "format": "[Placeholder — e.g. in person / online]",
+    "featured": true,
+    "active": true,
+    "includes": [
+      "[Placeholder — e.g. technique]",
+      "[Placeholder — e.g. repertoire]",
+      "[Placeholder — e.g. personalized exercises]"
+    ]
+  },
+  {
+    "id": "beginner",
+    "title": "Beginner Lesson",
+    "shortDescription": "[Placeholder — one sentence for complete beginners.]",
+    "longDescription": "[Placeholder — how beginners are guided step by step.]",
+    "duration": "60 minutes",
+    "price": "€XX",
+    "currency": "EUR",
+    "targetAudience": "[Placeholder — beginners]",
+    "format": "[Placeholder — e.g. in person / online]",
+    "featured": false,
+    "active": true,
+    "includes": [
+      "[Placeholder — fundamentals]",
+      "[Placeholder — first songs]",
+      "[Placeholder — practice plan]"
+    ]
+  },
+  {
+    "id": "advanced",
+    "title": "Advanced / Performance Coaching",
+    "shortDescription": "[Placeholder — one sentence for advanced players.]",
+    "longDescription": "[Placeholder — performance, improvisation, songwriting focus.]",
+    "duration": "90 minutes",
+    "price": "€XX",
+    "currency": "EUR",
+    "targetAudience": "[Placeholder — advanced students]",
+    "format": "[Placeholder — e.g. in person / online]",
+    "featured": false,
+    "active": true,
+    "includes": [
+      "[Placeholder — e.g. improvisation]",
+      "[Placeholder — e.g. performance]",
+      "[Placeholder — e.g. songwriting]"
+    ]
+  }
+]

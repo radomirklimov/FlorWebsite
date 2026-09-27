@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>[Artist Name] — Artist, Musician &amp; Teacher</title>
+  <meta name="description" content="[Artist Name]: original music and individual music lessons. Listen to songs, view lessons and prices, and get in touch.">
+  <link rel="canonical" href="https://example.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="[Artist Name] — Artist, Musician &amp; Teacher">
+  <meta property="og:description" content="Original music and individual music lessons. Listen, learn, get in touch.">
+  <meta property="og:url" content="https://example.com/">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap nav">
+      <a class="brand" href="index.html" aria-label="[Artist Name] — home">[Artist Name]<span>.</span></a>
+      <button class="menu-btn" data-menu-btn aria-expanded="false" aria-label="Open menu">☰</button>
+      <nav class="nav-links" data-nav-links aria-label="Main navigation">
+        <a href="music.html">Music</a>
+        <a href="lessons.html">Lessons</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="lessons.html" class="nav-cta">View lessons</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <div class="wrap hero">
+      <div>
+        <p class="eyebrow">Artist · Musician · Teacher</p>
+        <h1>[Artist Name]</h1>
+        <p class="lede">Original music and individual music lessons. If you found me on social media — welcome. Listen to a song, see what I teach, and say hello.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="music.html">Listen to my music</a>
+          <a class="btn btn-ghost" href="lessons.html">View lessons</a>
+        </div>
+        <div class="hero-meta">
+          <span>[Genre — placeholder]</span>
+          <span>[City / Region — placeholder]</span>
+          <span>Lessons: online &amp; in person*</span>
+        </div>
+        <p style="color:var(--muted);font-size:.82rem;margin-top:8px">*Replace with real format once confirmed.</p>
+      </div>
+      <div class="portrait" role="img" aria-label="Artist photo placeholder — replace with a real portrait">
+        <small>Photo placeholder</small>
+        <strong>Add your portrait here</strong>
+        <span style="color:var(--muted);font-size:.9rem">Recommended: 4:5, dark / cinematic mood.</span>
+      </div>
+    </div>
+
+    <!-- MUSIC HIGHLIGHT -->
+    <section aria-labelledby="music-h">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div>
+            <p class="eyebrow">Music</p>
+            <h2 id="music-h">Start with one song</h2>
+            <p>My latest release first — then the rest. Every song links straight to the platforms where you already listen.</p>
+          </div>
+          <a class="btn btn-ghost btn-small" href="music.html">All music →</a>
+        </div>
+        <div class="grid-3" data-songs data-featured-only data-limit="3">
+          <!-- Static SEO fallback (mirrors content/songs.json; JS re-renders when JSON loads) -->
+          <article class="card featured">
+            <span class="tag">Featured release</span>
+            <div class="song-art" role="img" aria-label="Artwork placeholder">♪</div>
+            <h3>[Song Title One]</h3>
+            <p class="song-meta">[2025] · [Genre — placeholder]</p>
+            <p style="color:var(--muted)">[Short placeholder description of the song.]</p>
+            <div class="listen-row">
+              <a class="pill" href="https://open.spotify.com/REPLACE_ME" target="_blank" rel="noopener">Spotify</a>
+              <a class="pill" href="https://youtube.com/REPLACE_ME" target="_blank" rel="noopener">YouTube</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- LESSONS HIGHLIGHT -->
+    <section class="strip" aria-labelledby="lessons-h">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div>
+            <p class="eyebrow">Lessons</p>
+            <h2 id="lessons-h">Learn with me</h2>
+            <p>Personal lessons built around your goals and level. Clear pricing, no hidden steps — message me and we start from there.</p>
+          </div>
+          <a class="btn btn-ghost btn-small" href="lessons.html">Lessons &amp; prices →</a>
+        </div>
+        <div class="grid-3" data-lessons>
+          <article class="card featured">
+            <span class="tag">Most popular</span>
+            <h3>Individual Lesson</h3>
+            <p class="song-meta">60 minutes · [audience] · [format]</p>
+            <p style="color:var(--muted)">[Placeholder — one sentence on who this lesson is for.]</p>
+            <p class="price">€XX <small>/ 60 min</small></p>
+            <a class="btn btn-ghost btn-small" style="margin-top:18px" href="contact.html?topic=lesson">Ask about a lesson</a>
+          </article>
+        </div>
+        <p style="color:var(--muted);font-size:.88rem;margin-top:14px">Prices shown as €XX placeholders — replace with real prices in <code>content/lessons.json</code>.</p>
+      </div>
+    </section>
+
+    <!-- ABOUT TEASER -->
+    <section aria-labelledby="about-h">
+      <div class="wrap split">
+        <div class="portrait reveal" style="aspect-ratio:1/1" role="img" aria-label="Artist photo placeholder">
+          <small>Photo placeholder</small>
+          <strong>Your story in one image</strong>
+        </div>
+        <div class="reveal">
+          <p class="eyebrow">About</p>
+          <h2 id="about-h">A musician first, a teacher second.</h2>
+          <p class="lede">[Placeholder — two or three honest sentences about your music, background and why you teach. No awards or credentials unless real.]</p>
+          <ul class="checklist">
+            <li>[Placeholder — e.g. what you play]</li>
+            <li>[Placeholder — e.g. years performing / writing]</li>
+            <li>[Placeholder — e.g. teaching approach in one line]</li>
+          </ul>
+          <div class="hero-actions">
+            <a class="btn btn-ghost" href="about.html">More about me</a>
+            <a class="btn btn-ghost" href="contact.html">Contact me</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT CTA -->
+    <section class="strip" aria-labelledby="cta-h">
+      <div class="wrap strip-inner reveal">
+        <div>
+          <p class="eyebrow">Say hello</p>
+          <h2 id="cta-h">Want a lesson, or just like the music?</h2>
+          <p class="lede">One message is enough. Tell me what you're looking for and I'll reply personally.</p>
+        </div>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="contact.html">Contact me</a>
+          <a class="btn btn-ghost" href="music.html">Listen first</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="foot-grid">
+        <div>
+          <strong style="font-family:var(--serif);font-size:1.1rem;color:var(--text)">[Artist Name]</strong>
+          <p>Artist · Musician · Teacher<br>[City / Region — placeholder]</p>
+        </div>
+        <div>
+          <strong style="color:var(--text)">Follow &amp; listen</strong>
+          <div class="socials" data-socials>
+            <a class="pill" href="https://instagram.com/REPLACE_ME" target="_blank" rel="noopener">Instagram</a>
+            <a class="pill" href="https://tiktok.com/@REPLACE_ME" target="_blank" rel="noopener">TikTok</a>
+            <a class="pill" href="https://youtube.com/@REPLACE_ME" target="_blank" rel="noopener">YouTube</a>
+            <a class="pill" href="https://open.spotify.com/REPLACE_ME" target="_blank" rel="noopener">Spotify</a>
+          </div>
+        </div>
+        <div>
+          <strong style="color:var(--text)">Explore</strong>
+          <p><a href="music.html">Music</a> · <a href="lessons.html">Lessons</a> · <a href="about.html">About</a> · <a href="contact.html">Contact</a></p>
+          <p><a href="mailto:hello@example.com">hello@example.com</a></p>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span data-year>2026</span> [Artist Name]. All rights reserved.</span>
+        <span>Replace REPLACE_ME links with real profiles.</span>
+      </div>
+    </div>
+  </footer>
+  <script src="js/site.js" defer></script>
+</body>
+</html>
