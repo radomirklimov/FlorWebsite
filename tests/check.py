@@ -55,7 +55,17 @@ check("flow: direct landing on lessons→contact", "contact.html" in les)
 # Responsive
 css = read("css/style.css")
 check("responsive: mobile breakpoint", "@media" in css and "640px" in css)
+check("responsive: tablet breakpoint", "900px" in css)
 check("responsive: hamburger nav", "data-menu-btn" in h and "menu-btn" in css)
+check("responsive: open menu scroll-safe", "100dvh" in css)
+check("responsive: viewport meta on all pages", all('name="viewport"' in html for html in pages.values()))
+check("responsive: no iOS text inflation", "text-size-adjust" in css)
+check("responsive: no horizontal overflow", "overflow-x:clip" in css.replace(" ", ""))
+check("responsive: headings wrap safely", "overflow-wrap:break-word" in css.replace(" ", ""))
+check("responsive: inputs >=16px (no iOS zoom)", "input,select,textarea" in css and "font-size:1rem" in css)
+check("responsive: touch-action + tap targets", "touch-action:manipulation" in css.replace(" ", "") and "pointer:coarse" in css.replace(" ", ""))
+check("responsive: full-width buttons on phones", ".hero-actions{display:flex;flex-direction:column" in css.replace(" ", "").replace("\n", ""))
+check("responsive: no fixed wide elements", not re.search(r"(?<!max-)width:\s*[5-9]\d{2,}px|(?<!max-)min-width:\s*[5-9]\d{2,}px", css))
 
 # SEO
 for p, html in pages.items():
